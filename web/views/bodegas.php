@@ -21,7 +21,7 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><a href="/views/index.twig">Inicio</a></li>
-          <li  class="active"><a href="/views/articulos.php">Articulos</a></li>
+          <li class="active"><a href="/views/articulos.php">Articulos</a></li>
           <li><a href="/views/bodegas.php">Bodegas</a></li>
           <li><a href="/views/kardex.php">Kardex</a></li>
         </ul>
@@ -29,17 +29,23 @@
     </div>
   </nav>
 
-  <form>
-    <div class="form-group">
-      <label for="nombreBodega">Nombre</label>
-      <input type="text" class="form-control" id="nombreBodega" placeholder="Email">
+  <div class="container">
+    <div class="container">
+      <div class="container">
+        <form>
+          <div class="form-group">
+            <label for="nombreBodega">Nombre</label>
+            <input type="text" class="form-control" id="nombreBodega" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label for="descripcionBodega">Descripcion</label>
+            <input type="text" class="form-control" id="descripcionBodega" placeholder="Password">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="descripcionBodega">Descripcion</label>
-      <input type="text" class="form-control" id="descripcionBodega" placeholder="Password">
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
+  </div>
 </body>
 
 </html>

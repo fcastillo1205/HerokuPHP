@@ -17,8 +17,8 @@
    
     if($itemCount > 0){
         
-        $employeeArr = array();
-        $employeeArr["articulo"] = array();
+        $articulosArray = array();
+        $articulosArray["articulos"] = array();
 
         while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
             extract($row);
@@ -31,9 +31,9 @@
                 "ID_bodega" => $ID_bodega
             );
 
-            array_push($employeeArr["articulo"], $e);
+            array_push($articulosArray["articulos"], $e);
         }
-        echo json_encode($employeeArr);
+        echo json_encode($articulosArray);
     }
 
     else{

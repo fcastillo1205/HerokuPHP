@@ -12,6 +12,7 @@
 
     $stmt = $items->getArticulos();
     $itemCount = $stmt->rowCount();
+    echo $itemCount;
 
 
    

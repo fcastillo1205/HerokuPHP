@@ -13,8 +13,9 @@
     
     $item = new articulo($db);
 
-   if(isset($_GET["id"])){
+   if(isset($_GET["id"])&&isset($_GET["estado"])){
     $item->id = $_GET["id"];
+    $item->estado = $_GET["estado"];
    }
     
    

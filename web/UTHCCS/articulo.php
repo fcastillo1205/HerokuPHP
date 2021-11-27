@@ -24,8 +24,9 @@
         // GET todas Las bodegas
         public function getArticulos(){
             $sqlQuery = "SELECT id, nombre, descripcion, precio, estado, ID_bodega FROM " . $this->db_table . "";
-            $stmt = $this->conn->prepare($sqlQuery);
-            $stmt->execute();
+            //$stmt = $this->conn->prepare($sqlQuery);
+            $stmt = pg_query($this->conn, $sqlQuery);
+            //$stmt->execute();
             return $stmt;
         }
 
